@@ -1,14 +1,18 @@
+footer {
+    margin-bottom: 52px;
+}
+
 .footer-container {
     display: inline-flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 24px;
     width: 100%;
-
 }
 
 .footer-link {
     margin: 0 8px 12px;
     font-size: 12px;
-    text-decoration: underline;
     color: #737373;
     &:hover {
         text-decoration: underline;
@@ -20,7 +24,7 @@
     color: #737373;
     & svg {
         transform: rotate(180deg);
-    }    
+    }
 }
 
 footer > div:nth-of-type(2) > span {

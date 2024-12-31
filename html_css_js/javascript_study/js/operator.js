@@ -23,8 +23,8 @@ console.log(5 ** 2);
  /**
   * 논리 연산자
   * &&, ||
-  * 단축 평가
   * 
+  * 단축 평가
   * 논리 자료 값 || anything
   * 논리 자료 값 === true   => true;
   * 논리 자료 값 === false  => anything 

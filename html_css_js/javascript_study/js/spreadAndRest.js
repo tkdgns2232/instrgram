@@ -11,8 +11,8 @@ const obj2 = {
  * 비구조 할당(구조분해)
  * 
  */
-// const data1 = obj,data1;
-// const data2 = obj,data2;
+// const data1 = obj.data1;
+// const data2 = obj.data2;
 const {data1:d1, data2:d2} = obj;  // 객체는 {} 사용   / :으로 변수명 변경가능
 console.log(d1,d2);
 

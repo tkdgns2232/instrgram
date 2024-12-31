@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            margin: 200px auto;
+            border: 1px solid #222222;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            cursor: pointer;
+
+            & > img {
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img-box">
+        <img src="" alt="">
+    </div>
+    <script>
+        let currentIndex = 0;
+        
+        const urlList = [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OrtM7FfDgFfgOmRqL4R__bU5cjx1ltwy1A&s",
+            "https://blog.kakaocdn.net/dn/bBUpSJ/btqV2WO4dXv/DZ93jfvkYwSx4NHk3dJku0/img.png",
+            "https://hanamon.kr/wp-content/uploads/2021/12/javascript-logo.jpeg",
+            "https://ems.elancer.co.kr/99_upload/Append/T_Blog/editor/2023080711282873856.jpg"
+        ]
+
+        function handleImgChangeOnClick() {
+            if(currentIndex < urlList.length - 1){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            const imgElement = document.querySelector(".img-box > img");
+            imgElement.src = urlList[currentIndex];
+        }
+
+        window.onload = () => { // onload 문서가 끝날때
+            const imgElement = document.querySelector(".img-box > img");
+            imgElement.src = urlList[currentIndex];
+            const imgBoxElement = document.querySelector(".img-box");
+            imgBoxElement.onclick = handleImgChangeOnClick; 
+        }
+
+     
+    </script>
+</body>
+</html>

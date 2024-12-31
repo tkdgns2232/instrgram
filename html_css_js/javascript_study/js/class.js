@@ -12,7 +12,7 @@ class User {
     }
 
     toString() {
-        return `User = {username: ${this.username}, password:${this.password}}`;
+        return `User = {username: ${this.username}, password:${this.password}}`; // ${}을 사용하여 변수나 표현식에 삽입가능
     }
 
 }

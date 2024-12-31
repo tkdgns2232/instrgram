@@ -1,6 +1,6 @@
 var name = "김준일"; // var는 변수를 나타낸다 타입이 정해져있지 않다
 console.log(name);
-console.log(typeof name);
+console.log(typeof name);  // typeof를 쓰면 데이터 타입을 알 수 있다.
 var age = 31;
 console.log(age);
 console.log(typeof age);
